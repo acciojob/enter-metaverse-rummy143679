@@ -6,6 +6,6 @@ btn.addEventListener("click",() => {
 	const ele = document.createElement("h1");
 	ele.textContent = "Entered Metaverse";
 	ele.setAttribute("id", "status");
-	pt.replaceWith(ele);
+	pt.textContent = ele;
 	
 })
