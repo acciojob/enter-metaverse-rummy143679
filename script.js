@@ -1,11 +1,9 @@
-//your JS code here. If required.
-const dt = document.getElementById("status");
 const btn = document.getElementById("enterBtn");
+const statusElement = document.getElementById("status");
 
-btn.addEventListener("click",() => {
-	const ele = document.createElement("h1");
-	ele.textContent = "Entered Metaverse";
-	dt.innerHtml = "";
-	dt.appendChild = ele;
-	
-})
+btn.addEventListener("click", () => {
+  const h1 = document.createElement("h1");
+  h1.textContent = "Entered Metaverse";
+  h1.id = "status"; // maintain the same id
+  statusElement.replaceWith(h1);
+});
